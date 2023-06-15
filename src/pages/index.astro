@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Coches eléctricos, energia solar y limpia | Tesla Colombia">
 	<main>
 
-		<header class="py-3 px-10 flex items-center fixed top-0 w-full justify-between" >
+		<header class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white" >
 
 			<div class="flex flex-grow basis-0">
 				<svg 
@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 
 			<nav>
-				<ul class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
+				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
 					<li><a href="#">Model S</a></li>
 					<li><a href="#">Model 3</a></li>
 					<li><a href="#">Model X</a></li>
@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 			</nav>
 			<nav class="flex flex-grow basis-0 justify-end">
-				<ul class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
+				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
 					<li><a href="#">Soporte</a></li>
 					<li><a href="#">Tienda</a></li>
 					<li><a href="#">Cuenta</a></li>
@@ -34,6 +34,23 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 			</nav>
 		</header>
+
+		<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
+			<header class="z-30 relative">
+				<h2 class="text-white pt-40 text-[40px] font-medium">Disfrute de Tesla</h2>
+				<p class="text-white text-sm">Programe una prueba de conducción hoy mismo</p>
+			</header>
+
+			<footer class="z-30 relative">
+				<a href="#">
+					Prueba de conducción
+				</a>
+			</footer>
+			
+			<div class="absolute top-0 bottom-0 h-full">
+				<video class="object-center" autoplay muted loop src="/video.webm"></video>
+			</div>
+		</section>
 
 	</main>
 </Layout>
